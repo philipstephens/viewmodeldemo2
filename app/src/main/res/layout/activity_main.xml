@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/input_number"
+            android:layout_width="182dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="133dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="99dp"
+            android:hint="@string/add"
+            android:textColor="@color/black"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/add_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="155dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="119dp"
+            android:layout_marginStart="47dp"
+            android:text="@string/add"
+            app:layout_constraintBottom_toTopOf="@+id/sum_result"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_number" />
+
+        <TextView
+            android:id="@+id/sum_result"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="326dp"
+            android:layout_marginStart="47dp"
+            android:textColor="@color/black"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
